@@ -1,13 +1,13 @@
 libft:
 	- <ctype.h>
-		- ft_isascii
-		- ft_isalnum
-		- ft_isalpha
+		- ft_isascii @done
+		- ft_isalnum @done
+		- ft_isalpha @done
 		- ft_islower *
 		- ft_isupper *
-		- ft_isdigit
+		- ft_isdigit @done
 		- ft_isxdigit *
-		- ft_isprint
+		- ft_isprint @done
 		- ft_isgraph *
 		- ft_issapce *
 		- ft_ispunct *

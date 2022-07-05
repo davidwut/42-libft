@@ -1,6 +1,7 @@
 SRCS_DIR		:= srcs/
 SRC				:= ft_strlen.c ft_putchar.c ft_putchar_fd.c ft_putstr.c ft_putstr_fd.c \
-					ft_atoi.c ft_isalpha.c
+					ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
+					ft_isprint.c
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRC))
 OBJS			:= $(SRCS:%.c=%.o)
 NAME			:= libft.a
@@ -26,4 +27,7 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all clean fclean re
+check:		re
+			$(MAKE) fclean
+
+.PHONY:		all clean fclean re check
