@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dwuthric <dwuthric@student42.fr>           +#+  +:+       +#+        */
+/*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 14:50:45 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/06/30 14:52:21 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/07/05 18:20:11 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,17 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-int	ft_strlen(char *str);
+# include <stdio.h>
+
+int		ft_isalpha(char c);
+
+int		ft_atoi(char *str);
+
+int		ft_strlen(char *str);
+
+void	ft_putchar(char c);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr(char *str);
+void	ft_putstr_fd(char *str, int fd);
 
 #endif

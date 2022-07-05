@@ -15,7 +15,7 @@ libft:
 		- ft_tolower
 		- ft_toupper
 	- <stdlib.h>
-		- ft_atoi
+		- ft_atoi @done
 		- ft_atof *
 		- ft_calloc
 	- <strings.h>
@@ -49,10 +49,10 @@ libft:
 		- ft_pow *
 	- non-standard
 		- ft_swap *
-		- ft_putchar *
-		- ft_putchar_fd
-		- ft_putstr *
-		- ft_putstr_fd
+		- ft_putchar * @done
+		- ft_putchar_fd @done
+		- ft_putstr * @done
+		- ft_putstr_fd @done
 		- ft_putendl *
 		- ft_putendl_fd
 		- ft_putnbr *
@@ -65,7 +65,7 @@ libft:
 		- ft_split_free *
 		- ft_strmapi
 		- ft_ftoa_rnd
-	- linked lists
+	- linked lists *
 		- ft_lstnew
 		- ft_lstsize
 		- ft_lstlast

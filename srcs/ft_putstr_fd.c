@@ -1,14 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dwuthric <dwuthric@student42.fr>           +#+  +:+       +#+        */
+/*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/30 15:40:36 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/06/30 15:40:44 by dwuthric         ###   ########.fr       */
+/*   Created: 2022/07/05 16:44:30 by dwuthric          #+#    #+#             */
+/*   Updated: 2022/07/05 16:46:01 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+void	ft_putstr_fd(char *str, int fd)
+{
+	write(fd, str, ft_strlen(str));
+}
