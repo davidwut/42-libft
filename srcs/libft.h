@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 14:50:45 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/05 18:49:38 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/07/05 19:07:39 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_isxdigit(int c);
+int		ft_isgraph(int c);
+int		ft_isspace(int c);
+int		ft_ispunct(int c);
+int		ft_iscntrl(int c);
 int		ft_islower(int c);
 int		ft_isupper(int c);
 int		ft_tolower(int c);

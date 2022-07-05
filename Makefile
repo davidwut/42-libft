@@ -2,7 +2,8 @@ SRCS_DIR		:= srcs/
 SRC				:= ft_strlen.c ft_putchar.c ft_putchar_fd.c ft_putstr.c ft_putstr_fd.c \
 					ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 					ft_isprint.c ft_tolower.c ft_toupper.c
-BONUS			:= ft_islower.c ft_isupper.c
+BONUS			:= ft_islower.c ft_isupper.c ft_isxdigit.c ft_isgraph.c ft_isspace.c \
+					ft_ispunct.c ft_iscntrl.c
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRC))
 BONUS_SRCS		:= $(addprefix $(SRCS_DIR),$(BONUS))
 OBJS			:= $(SRCS:%.c=%.o)
@@ -31,10 +32,15 @@ clean:
 
 fclean:		clean
 			$(RM) $(NAME)
+			$(RM) libft.so
+
+so:
+			$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS_SRCS)
+			$(CC) -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
 
 re:			fclean all
 
 check:		bonus
 			$(MAKE) fclean
 
-.PHONY:		all bonus clean fclean re check
+.PHONY:		all bonus clean fclean re so check

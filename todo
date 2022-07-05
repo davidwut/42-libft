@@ -6,14 +6,14 @@ libft:
 		- ft_islower * @done
 		- ft_isupper * @done
 		- ft_isdigit @done
-		- ft_isxdigit *
+		- ft_isxdigit * @done
 		- ft_isprint @done
-		- ft_isgraph *
-		- ft_issapce *
-		- ft_ispunct *
-		- ft_iscntrl *
-		- ft_tolower
-		- ft_toupper
+		- ft_isgraph * @done
+		- ft_isspace * @done
+		- ft_ispunct * @done
+		- ft_iscntrl * @done
+		- ft_tolower @done
+		- ft_toupper @done
 	- <stdlib.h>
 		- ft_atoi @done
 		- ft_atof *
