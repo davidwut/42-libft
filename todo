@@ -3,8 +3,8 @@ libft:
 		- ft_isascii @done
 		- ft_isalnum @done
 		- ft_isalpha @done
-		- ft_islower *
-		- ft_isupper *
+		- ft_islower * @done
+		- ft_isupper * @done
 		- ft_isdigit @done
 		- ft_isxdigit *
 		- ft_isprint @done
