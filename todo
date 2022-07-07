@@ -53,15 +53,15 @@ libft:
 		- ft_putchar_fd @done
 		- ft_putstr * @done
 		- ft_putstr_fd @done
-		- ft_putendl *
-		- ft_putendl_fd
-		- ft_putnbr *
-		- ft_putnbr_fd
+		- ft_putendl * @done
+		- ft_putendl_fd @done
+		- ft_putnbr * @done
+		- ft_putnbr_fd @done
 		- ft_itoa @done
 		- ft_substr @done
 		- ft_strtrim @done
 		- ft_strjoin @done
-		- ft_split
+		- ft_split @done
 		- ft_split_free *
 		- ft_strmapi @done
 		- ft_ftoa_rnd

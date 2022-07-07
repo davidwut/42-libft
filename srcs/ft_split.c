@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 19:02:47 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/07 21:16:28 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/07/07 22:52:04 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static char	**append_str(const char *str, int from, int to, char **list)
 
 	if (to - from < 1)
 		return (list);
-	len = ft_strlen2((const char **)list);
+	len = ft_strlen_2((const char **)list);
 	res = malloc(sizeof(*res) * (len + 2));
 	i = -1;
 	while (++i < len)

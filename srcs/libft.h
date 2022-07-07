@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 14:50:45 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/07 22:24:11 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/07/07 22:51:42 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,16 @@ char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strdup(const char *s);
-size_t	ft_strlen2(const char **list);
+size_t	ft_strlen_2(const char **list);
 
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
+void	ft_putendl(char *s);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr(char *str);
 void	ft_putstr_fd(char *str, int fd);
+void	ft_putnbr(int n);
+void	ft_putnbr_fd(int n, int fd);
 char	*ft_substr(char const *s, unsigned int from, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);

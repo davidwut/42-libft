@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen2.c                                       :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/07 19:06:37 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/07 19:07:40 by dwuthric         ###   ########.fr       */
+/*   Created: 2022/07/07 22:44:41 by dwuthric          #+#    #+#             */
+/*   Updated: 2022/07/07 22:45:31 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen2(const char **list)
+void	ft_putendl(char *s)
 {
-	size_t	count;
-
-	count = -1;
-	while (list[++count])
-		;
-	return (count);
+	ft_putstr(s);
+	ft_putchar('\n');
 }
