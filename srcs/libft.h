@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 14:50:45 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/05 19:07:39 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/07/07 04:45:33 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,14 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 int		ft_atoi(char *str);
+
+void	*ft_memset(void *ptr, int c, size_t n);
+void	ft_bzero(void *ptr, size_t n);
+void	*ft_memchr(const void *ptr, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 
 int		ft_strlen(char *str);
 

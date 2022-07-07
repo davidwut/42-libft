@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/05 18:02:59 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/05 21:37:23 by dwuthric         ###   ########.fr       */
+/*   Created: 2022/07/07 04:42:22 by dwuthric          #+#    #+#             */
+/*   Updated: 2022/07/07 04:57:08 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	int	total;
-	int	sign;
+	unsigned char		*dest_ptr;
+	const unsigned char	*src_ptr;
+	size_t				i;
 
-	total = 0;
-	sign = 1;
-	while (*str == ' ' || *str == '\f' || *str == '\n' \
-		|| *str == '\r' || *str == '\t' || *str == '\v')
-		str++;
-	if (*str == '-')
-		sign = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while ('0' <= *str && *str <= '9')
-		total = total * 10 + (*str++) - '0';
-	return (total * sign);
+	dest_ptr = dest;
+	src_ptr = src;
+	i = -1;
+	while (++i < n)
+	{
+		dest_ptr[i] = src_ptr[i];
+		if (src_ptr[i] == (unsigned char)c)
+			return (dest + i + 1);
+	}
+	if (src_ptr[i - 1] == (unsigned char)c)
+		return (dest + i);
+	return (NULL);
 }
