@@ -7,3 +7,5 @@
 .DS_STORE
 *dSYM*
 \.vscode
+libft.a
+libft.so

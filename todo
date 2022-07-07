@@ -19,13 +19,13 @@ libft:
 		- ft_atof *
 		- ft_calloc
 	- <strings.h>
-		- ft_bzero
-		- ft_memset
-		- ft_memchr
-		- ft_memcmp
-		- ft_memmove
-		- ft_memcpy
-		- ft_memccpy
+		- ft_bzero @done
+		- ft_memset @done
+		- ft_memchr @done
+		- ft_memcmp @done
+		- ft_memmove @done
+		- ft_memcpy @done
+		- ft_memccpy @done
 	- <string.h>
 		- ft_strlen @done
 		- ft_strlen_2 *
