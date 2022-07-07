@@ -17,7 +17,7 @@ libft:
 	- <stdlib.h>
 		- ft_atoi @done
 		- ft_atof *
-		- ft_calloc
+		- ft_calloc @done
 	- <strings.h>
 		- ft_bzero @done
 		- ft_memset @done
@@ -29,21 +29,21 @@ libft:
 	- <string.h>
 		- ft_strlen @done
 		- ft_strlen_2 *
-		- ft_strchr
-		- ft_strrchr
-		- ft_strstr *
-		- ft_strnstr
+		- ft_strchr ; @done
+		- ft_strrchr ; @done
+		- ft_strstr * @done
+		- ft_strnstr ; @done
 		- ft_strcmp
-		- ft_strncmp
+		- ft_strncmp ; @done
 		- ft_strnrcmp
 		- ft_strcpy *
 		- ft_strncpy *
 		- ft_strdup
-		- ft_strndup *
+		- ft_strndup * @done
 		- ft_strcat *
 		- ft_strncat *
-		- ft_strlcpy
-		- ft_strlcat
+		- ft_strlcpy ; @done
+		- ft_strlcat ; @done
 	- <math.h>
 		- ft_sqrt *
 		- ft_pow *
