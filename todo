@@ -66,12 +66,12 @@ libft:
 		- ft_strmapi @done
 		- ft_ftoa_rnd
 	- linked lists *
-		- ft_lstnew
-		- ft_lstsize
-		- ft_lstlast
-		- ft_lstadd_back
-		- ft_lstadd_front
-		- ft_lstdelone
-		- ft_lstclear
-		- ft_lstiter
-		- ft_lstmap
+		- ft_lstnew @done
+		- ft_lstsize @done
+		- ft_lstlast @done
+		- ft_lstadd_back @done
+		- ft_lstadd_front @done
+		- ft_lstdelone @done
+		- ft_lstclear @done
+		- ft_lstiter @done
+		- ft_lstmap @done
