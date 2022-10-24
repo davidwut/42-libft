@@ -22,24 +22,47 @@ CC				:= gcc
 CFLAGS			:= -Wall -Wextra -Werror
 AR				:= ar -rcs
 
+# Colors
+MAIN = \033[38;5;50m
+PLOAD = \033[38;5;119m
+GREEN = \033[38;5;47m
+BLUE = \033[0;38;5;12m
+ORANGE = \033[0;38;5;214m
+RED = \033[1;31m
+
+END = \033[0m
+BOLD = \033[1m
+
+# MSG Prefixes
+INFO = $(MAIN)Info$(END)
+WARN = $(ORANGE)Warning$(END)
+IMPORTANT = $(ORANGE)Important$(END)
+FAILED = $(RED)Fail$(END)
+DEBUG = $(ORANGE)Debug$(END)
+
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-			$(AR) $(NAME) $(OBJS)
+			@$(AR) $(NAME) $(OBJS)
+			@echo "$(INFO) libft updated"
 
 %.o:		%.c
-			$(CC) $(CFLAGS) -c $< -o $(<:%.c=%.o)
+			@echo "$(ORANGE) Creating $(<:%.c=%.o) $(END)"
+			@$(CC) $(CFLAGS) -c $< -o $(<:%.c=%.o)
 
 bonus:		$(OBJS) $(BONUS_OBJS)
-			$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
+			@$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
+			@echo "$(INFO) libft updated WITH bonuses"
 
 clean:
-			$(RM) $(OBJS)
-			$(RM) $(BONUS_OBJS)
+			@echo "$(INFO) Deleting .o files"
+			@$(RM) $(OBJS)
+			@$(RM) $(BONUS_OBJS)
 
 fclean:		clean
-			$(RM) $(NAME)
-			$(RM) libft.so
+			@echo "$(INFO) Deleting $(NAME) and libft.so"
+			@$(RM) $(NAME)
+			@$(RM) libft.so
 
 so:
 			$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS_SRCS)
@@ -48,6 +71,6 @@ so:
 re:			fclean all
 
 check:		bonus
-			$(MAKE) fclean
+			@$(MAKE) fclean
 
 .PHONY:		all bonus clean fclean re so check
