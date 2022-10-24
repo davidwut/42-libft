@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 14:50:45 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/11 21:59:51 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/10/24 14:57:51 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char *str, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 t_list	*ft_lstnew(void	*content);
 void	ft_lstadd_front(t_list **list, t_list *new_node);

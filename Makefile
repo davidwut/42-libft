@@ -6,7 +6,7 @@ SRC				:= ft_strlen.c ft_putchar.c ft_putchar_fd.c ft_putstr.c ft_putstr_fd.c \
 					ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c \
 					ft_strncmp.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c \
 					ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putendl_fd.c \
-					ft_putnbr_fd.c
+					ft_putnbr_fd.c ft_striteri.c
 BONUS			:= ft_islower.c ft_isupper.c ft_isxdigit.c ft_isgraph.c ft_isspace.c \
 					ft_ispunct.c ft_iscntrl.c ft_strstr.c ft_strlen_2.c ft_putendl.c \
 					ft_putnbr.c ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
