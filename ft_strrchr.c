@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 08:24:57 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/10/24 16:08:45 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/10/24 17:15:29 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == c % 256)
 			return ((char *)(s + i));
 		i--;
 	}
