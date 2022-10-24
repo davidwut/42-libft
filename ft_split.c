@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dwuthric <dwuthric@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 19:02:47 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/07/07 22:52:04 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:19:29 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	next_token(char *str, int last, char c)
+static int	next_token(const char *str, int last, char c)
 {
 	int	i;
 
@@ -49,7 +49,7 @@ static char	**append_str(const char *str, int from, int to, char **list)
 	return (res);
 }
 
-char	**ft_split(char *str, char c)
+char	**ft_split(const char *str, char c)
 {
 	char	**res;
 	int		last;
