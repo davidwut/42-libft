@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 15:16:56 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/10/24 16:57:45 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/10/24 18:07:14 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,22 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_len;
 
-	res = malloc(len + 1);
-	if (!res || !s)
+	if (!s)
 		return (NULL);
-	i = -1;
 	s_len = ft_strlen(s);
-	while (++i < len && (start + i) < s_len)
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (s_len - start < len)
+		len = s_len - start;
+	res = malloc(sizeof(*res) * (len + 1));
+	if (!res)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
 		res[i] = s[start + i];
+		i++;
+	}
 	res[i] = 0;
 	return (res);
 }
