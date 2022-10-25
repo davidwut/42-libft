@@ -6,13 +6,13 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 19:02:47 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/10/25 15:06:10 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/10/25 15:11:14 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	__ft_strlen_2(const char **list)
+static size_t	__ft_strlen_2(const char **list)
 {
 	size_t	count;
 
